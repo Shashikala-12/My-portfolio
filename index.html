@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===================================================================== -->
+    <!-- 1. BASE STRUCTURE & HTML SKELETON (PROMPT 1)                          -->
+    <!-- Software Engineer Portfolio with Pixel Art Aesthetic & Modern UI     -->
+    <!-- ===================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Shashikala T - Software Engineer & Computer Science (Data Science) undergraduate specializing in Python, Web Development, and IoT Solutions.">
+    <meta name="keywords"
+        content="Shashikala T, Software Engineer, Portfolio, Data Science, Python, JavaScript, Arduino, IoT, LumiSense, Web Developer">
+    <meta name="author" content="Shashikala T">
+
+    <title>Shashikala T | Software Engineer Portfolio</title>
+
+    <!-- Typography: Retro Pixel Accent font + Crisp Modern Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ===================================================================== -->
+    <!-- MOBILE TOP BAR (Accessible Hamburger for small screens)               -->
+    <!-- ===================================================================== -->
+    <div class="mobile-header-bar" id="mobile-header-bar">
+        <div class="nav-brand" style="border:none; padding:0;">
+            <span class="pixel-text" style="font-size:0.75rem; color:var(--accent-primary);">⚡ SHASHIKALA.DEV</span>
+        </div>
+        <button id="mobile-menu-toggle" class="hamburger-btn" aria-label="Toggle navigation menu">
+            ☰ MENU
+        </button>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- 3. VERTICAL NAVIGATION BAR (PROMPT 3)                                 -->
+    <!-- Placed on the left side of the screen; sticky, accessible & responsive -->
+    <!-- ===================================================================== -->
+    <aside id="vertical-navbar" class="vertical-navbar" aria-label="Sidebar Navigation">
+        <div class="nav-brand">
+            <img src="WhatsApp Image 2026-10-07 at 10.06.37 AM.jpeg" alt="Shashikala T Avatar"
+                class="brand-avatar-pixel" />
+            <div class="brand-text">
+                <span class="brand-title">SHASHIKALA T.</span>
+                <span class="brand-sub">B.E. CS (Data Science)</span>
+            </div>
+        </div>
+
+        <nav class="nav-menu" aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link active"><span class="nav-icon" aria-hidden="true">🏠</span> Home</a>
+                </li>
+                <li><a href="#about" class="nav-link"><span class="nav-icon" aria-hidden="true">👾</span> About Me</a>
+                </li>
+                <li><a href="#skills" class="nav-link"><span class="nav-icon" aria-hidden="true">⚔️</span> Skills</a>
+                </li>
+                <li><a href="#timeline" class="nav-link"><span class="nav-icon" aria-hidden="true">📜</span>
+                        Timeline</a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-icon" aria-hidden="true">🚀</span>
+                        Projects</a></li>
+                <li><a href="#video-section" class="nav-link"><span class="nav-icon" aria-hidden="true">📺</span>
+                        Video</a></li>
+                <li><a href="#testimonials" class="nav-link"><span class="nav-icon" aria-hidden="true">⭐</span>
+                        Testimonials</a></li>
+                <li><a href="#chat" class="nav-link"><span class="nav-icon" aria-hidden="true">💬</span> Chat AI</a>
+                </li>
+                <li><a href="#contact" class="nav-link"><span class="nav-icon" aria-hidden="true">📫</span> Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer Controls (Theme Toggle & Audio Toggle) -->
+        <div class="nav-footer">
+            <div class="theme-toggle-wrapper">
+                <span class="theme-label">THEME:</span>
+                <!-- Night Mode / Dark Mode Toggle button (Prompt 1 & 2) -->
+                <button id="theme-toggle-btn" class="theme-btn" type="button" aria-label="Toggle Night Mode"
+                    title="Toggle Light/Dark Theme">
+                    <span id="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+            </div>
+            <button id="sound-toggle-btn" class="pixel-btn" style="padding: 6px 10px; font-size: 0.6rem; width: 100%;"
+                type="button">
+                🔊 SFX: ON
+            </button>
+        </div>
+    </aside>
+
+    <!-- ===================================================================== -->
+    <!-- MAIN CONTENT AREA                                                     -->
+    <!-- ===================================================================== -->
+    <main class="main-layout" id="main-content">
+
+        <!-- ================================================================= -->
+        <!-- 2. HERO SECTION WITH PIXEL ART & NIGHT MODE (PROMPT 2)             -->
+        <!-- Uses background image provided + pixel art frame + welcoming title -->
+        <!-- ================================================================= -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-box">
+                <!-- Retro Pixel Window Header Bar -->
+                <div class="pixel-window-bar">
+                    <div class="window-dots">
+                        <span class="window-dot dot-red"></span>
+                        <span class="window-dot dot-yellow"></span>
+                        <span class="window-dot dot-green"></span>
+                    </div>
+                    <span class="window-title">SYSTEM_READY // PORTFOLIO_V2.0</span>
+                    <span class="pixel-badge" style="font-size: 0.55rem;">LEVEL 1 ENGINEER</span>
+                </div>
+
+                <div class="hero-content-grid">
+                    <div class="hero-intro-column">
+                        <div class="hero-badge-live">
+                            <span class="live-pulse" aria-hidden="true"></span>
+                            AVAILABLE FOR OPPORTUNITIES
+                        </div>
+                        <p class="hero-greeting">&gt; hello_world(visitor);</p>
+                        <h1 id="hero-title" class="hero-name">Shashikala T</h1>
+                        <h2 class="hero-role">Software Engineer &amp; Data Science Undergrad</h2>
+                        <p class="hero-tagline">
+                            Passionate problem solver crafting clean code, responsive web applications, and smart IoT
+                            automation systems with Python, C, Java, and modern web technologies.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="pixel-btn pixel-btn-primary" id="hero-cta-projects">
+                                🚀 View Projects
+                            </a>
+                            <a href="Shashikala_T.pdf" class="pixel-btn" id="hero-cta-resume" target="_blank"
+                                rel="noopener noreferrer">
+                                📄 Resume (PDF)
+                            </a>
+                            <a href="#contact" class="pixel-btn pixel-btn-accent" id="hero-cta-contact">
+                                ✉️ Say Hello
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pixel Art Avatar Card & Portrait -->
+                    <div class="hero-avatar-card">
+                        <div class="hero-portrait-frame">
+                            <img src="WhatsApp Image 2026-10-07 at 10.06.37 AM.jpeg" alt="Shashikala T Portrait"
+                                class="hero-portrait-img" />
+                        </div>
+                        <div class="hero-avatar-status">
+                            <span style="color:var(--accent-green);">●</span>
+                            <span>STATUS: CODING &amp; LEARNING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 4. ABOUT ME SECTION WITH PROFILE & BIO (PROMPT 4)                 -->
+        <!-- Minimalistic, clean presentation with highlights and stats       -->
+        <!-- ================================================================= -->
+        <section id="about" class="section-container" aria-labelledby="about-title">
+            <div class="section-header">
+                <span class="section-tag">[ 01. BIO ]</span>
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <p class="section-subtitle">A glimpse into my background, engineering drive, and academic path</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-visual-column">
+                    <div class="about-photo-wrapper">
+                        <img src="WhatsApp Image 2026-10-07 at 10.06.37 AM.jpeg" alt="Shashikala T Profile"
+                            class="about-photo-img" />
+                    </div>
+                    <div class="about-stat-row">
+                        <div class="stat-box">
+                            <span class="stat-number">8.6</span>
+                            <span class="stat-label">B.E. CGPA</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">2029</span>
+                            <span class="stat-label">Graduation Year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-bio-text">
+                    <p class="about-bio-lead">
+                        I am a Computer Science &amp; Data Science student at Adhichunchanagiri Institute of Technology,
+                        Chikkamagaluru, passionate about creating practical software solutions.
+                    </p>
+                    <p>
+                        My technical curiosity bridges both software logic and real-world hardware integration. Whether
+                        writing robust algorithms in <strong>Python</strong>, low-level architecture in
+                        <strong>C/Java</strong>, or crafting interactive user interfaces for the web, I thrive on
+                        turning complex problems into elegant solutions.
+                    </p>
+                    <p>
+                        Beyond core coursework, I built <strong>LumiSense</strong>, an automated sensor-based street
+                        lighting prototype engineered with Arduino to conserve municipal energy. I am enthusiastic about
+                        data science pipelines, clean modular software design, and open-source collaboration.
+                    </p>
+
+                    <div class="highlight-chips">
+                        <span class="chip">💡 IoT &amp; Automation</span>
+                        <span class="chip">📊 Data Analytics</span>
+                        <span class="chip">🌐 Web Engineering</span>
+                        <span class="chip">🎯 Problem Solver</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 5. SKILLS SECTION (PROMPT 5)                                      -->
+        <!-- Visual competencies with pixel art progress bars and hover states -->
+        <!-- ================================================================= -->
+        <section id="skills" class="section-container" aria-labelledby="skills-title">
+            <div class="section-header">
+                <span class="section-tag">[ 02. COMPETENCIES ]</span>
+                <h2 id="skills-title" class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Core programming languages, toolkits, and platforms in my repertoire</p>
+            </div>
+
+            <div class="skills-grid-wrapper">
+                <!-- Skill Category 1: Programming Languages -->
+                <!-- Comments explain skill representations and progress levels -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <span class="cat-icon" aria-hidden="true">🐍</span>
+                        <h3 class="cat-title">Programming</h3>
+                    </div>
+                    <div class="skill-bars-list">
+                        <!-- Python: Primary language for data structures and analytics -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- C Programming: Core memory management and foundational algorithms -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C Language</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-cyan" style="width: 82%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Java: Object-oriented concepts and application logic -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java (OOP)</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-amber" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2: Web & Frontend -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <span class="cat-icon" aria-hidden="true">🌐</span>
+                        <h3 class="cat-title">Web &amp; UI Stack</h3>
+                    </div>
+                    <div class="skill-bars-list">
+                        <!-- HTML5 & Semantic Web: Structure and accessibility -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5 / Semantic UI</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-green" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS3: Responsive Flexbox/Grid and Pixel Aesthetics -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3 &amp; Responsive Layouts</span>
+                                <span class="skill-percent">86%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-cyan" style="width: 86%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript: Interactive DOM, Asynchronous fetch, Web APIs -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript (ES6+)</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3: Hardware, IoT & Tools -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <span class="cat-icon" aria-hidden="true">⚙️</span>
+                        <h3 class="cat-title">IoT, Data &amp; Tools</h3>
+                    </div>
+                    <div class="skill-bars-list">
+                        <!-- Arduino & Sensors: Microcontrollers, motion sensors, automation -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Arduino &amp; Sensors</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-amber" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Data Science: Exploratory data analysis, mathematical modeling -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Science Fundamentals</span>
+                                <span class="skill-percent">76%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-green" style="width: 76%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Git & GitHub: Version control and collaboration -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git &amp; Version Control</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="pixel-progress-track">
+                                <div class="pixel-progress-fill fill-cyan" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 6. INTERACTIVE TIMELINE OF CAREER MILESTONES (PROMPT 6)            -->
+        <!-- Rounded boxes/cards, CSS transitions and milestone markers        -->
+        <!-- ================================================================= -->
+        <section id="timeline" class="section-container" aria-labelledby="timeline-title">
+            <div class="section-header">
+                <span class="section-tag">[ 03. CHRONOLOGY ]</span>
+                <h2 id="timeline-title" class="section-title">Career &amp; Education Timeline</h2>
+                <p class="section-subtitle">Key academic milestones, project achievements, and ongoing journey</p>
+            </div>
+
+            <div class="timeline-stepper">
+                <!-- Milestone 1: Undergrad Education -->
+                <article class="timeline-event-card">
+                    <div class="timeline-marker-pixel" aria-hidden="true">🎓</div>
+                    <span class="timeline-badge-year">2025 &mdash; 2029 (PRESENT)</span>
+                    <h3 class="timeline-event-title">B.E. in Computer Science (Data Science)</h3>
+                    <h4 class="timeline-event-org">Adhichunchanagiri Institute of Technology, Chikkamagaluru</h4>
+                    <p class="timeline-event-desc">
+                        Enrolled in Bachelor of Engineering with an active cumulative GPA of 8.6. Focusing on data
+                        structures, algorithmic problem solving, machine learning fundamentals, and computer
+                        architecture.
+                    </p>
+                </article>
+
+                <!-- Milestone 2: Major Hardware & IoT Project -->
+                <article class="timeline-event-card">
+                    <div class="timeline-marker-pixel" aria-hidden="true">⚡</div>
+                    <span class="timeline-badge-year">2026</span>
+                    <h3 class="timeline-event-title">Engineered LumiSense Smart Street Lighting</h3>
+                    <h4 class="timeline-event-org">Hardware &amp; Embedded Systems Milestone</h4>
+                    <p class="timeline-event-desc">
+                        Designed an adaptive lighting prototype using Arduino microcontrollers and ambient
+                        optical/motion sensors to optimize public lighting efficiency and decrease energy footprints.
+                    </p>
+                </article>
+
+                <!-- Milestone 3: Web Engineering & Open Source -->
+                <article class="timeline-event-card">
+                    <div class="timeline-marker-pixel" aria-hidden="true">💻</div>
+                    <span class="timeline-badge-year">2026</span>
+                    <h3 class="timeline-event-title">Full-Stack Development &amp; Portfolio Release</h3>
+                    <h4 class="timeline-event-org">Web Development &amp; UI Architecture</h4>
+                    <p class="timeline-event-desc">
+                        Created an interactive developer portfolio incorporating retro pixel aesthetics, client-side
+                        theme synchronization, responsive layouts, and interactive AI chatbot assistants.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 7. PROJECTS SECTION WITH CLICKABLE THUMBNAILS (PROMPT 7)          -->
+        <!-- Clickable cards opening modal view with detailed specs            -->
+        <!-- ================================================================= -->
+        <section id="projects" class="section-container" aria-labelledby="projects-title">
+            <div class="section-header">
+                <span class="section-tag">[ 04. SHOWCASE ]</span>
+                <h2 id="projects-title" class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Click any project thumbnail to inspect technical architecture and features
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: LumiSense (Connected to modal via data-project-id="lumisense") -->
+                <article class="project-box" data-project-id="lumisense" tabindex="0" role="button"
+                    aria-label="View LumiSense Project Details">
+                    <div class="project-thumbnail-wrapper">
+                        <!-- Custom retro graphic banner thumbnail -->
+                        <svg width="100%" height="100%" viewBox="0 0 400 200" style="background: #0f172a;"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="360" height="160" fill="#1e293b" stroke="#38bdf8"
+                                stroke-width="3" rx="8" />
+                            <circle cx="200" cy="80" r="35" fill="#facc15" filter="drop-shadow(0 0 15px #facc15)" />
+                            <text x="200" y="145" font-family="'Press Start 2P', monospace" font-size="14"
+                                fill="#f8fafc" text-anchor="middle">LUMISENSE IoT</text>
+                            <text x="200" y="168" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8"
+                                text-anchor="middle">Adaptive Street Light System</text>
+                        </svg>
+                        <div class="project-preview-overlay">
+                            <span class="pixel-btn pixel-btn-primary" style="font-size: 0.65rem;">🔍 INSPECT</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-row">
+                            <span class="pixel-badge">HARDWARE &amp; IOT</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">2026</span>
+                        </div>
+                        <h3 class="project-item-title">LumiSense</h3>
+                        <p class="project-item-desc">
+                            Automated street lighting architecture with Arduino and sensors that dynamically adjusts
+                            illumination to prevent energy waste.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag-badge">Arduino</span>
+                            <span class="tag-badge">Sensors</span>
+                            <span class="tag-badge">Automation</span>
+                        </div>
+                        <div class="project-card-actions">
+                            <span class="pixel-btn" style="font-size: 0.65rem; width: 100%;">View Details &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Pixel Portfolio (data-project-id="pixel-portfolio") -->
+                <article class="project-box" data-project-id="pixel-portfolio" tabindex="0" role="button"
+                    aria-label="View PixelArt Portfolio Details">
+                    <div class="project-thumbnail-wrapper">
+                        <svg width="100%" height="100%" viewBox="0 0 400 200" style="background: #1e1b4b;"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="360" height="160" fill="#312e81" stroke="#818cf8"
+                                stroke-width="3" rx="8" />
+                            <text x="200" y="90" font-family="'Press Start 2P', monospace" font-size="28" fill="#a78bfa"
+                                text-anchor="middle">&lt;DEV/&gt;</text>
+                            <text x="200" y="130" font-family="'Press Start 2P', monospace" font-size="12"
+                                fill="#e0e7ff" text-anchor="middle">PIXEL PORTFOLIO</text>
+                            <text x="200" y="155" font-family="'Inter', sans-serif" font-size="12" fill="#c7d2fe"
+                                text-anchor="middle">Responsive HTML5 &amp; CSS3</text>
+                        </svg>
+                        <div class="project-preview-overlay">
+                            <span class="pixel-btn pixel-btn-primary" style="font-size: 0.65rem;">🔍 INSPECT</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-row">
+                            <span class="pixel-badge">WEB UI</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">2026</span>
+                        </div>
+                        <h3 class="project-item-title">PixelArt Portfolio</h3>
+                        <p class="project-item-desc">
+                            Modern retro software engineer site featuring dynamic dark mode, vertical navigation, and
+                            simulated AI companion.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag-badge">HTML5</span>
+                            <span class="tag-badge">Vanilla CSS</span>
+                            <span class="tag-badge">JavaScript</span>
+                        </div>
+                        <div class="project-card-actions">
+                            <span class="pixel-btn" style="font-size: 0.65rem; width: 100%;">View Details &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Data Analytics Pipeline (data-project-id="data-analytics") -->
+                <article class="project-box" data-project-id="data-analytics" tabindex="0" role="button"
+                    aria-label="View Data Analytics Pipeline Details">
+                    <div class="project-thumbnail-wrapper">
+                        <svg width="100%" height="100%" viewBox="0 0 400 200" style="background: #022c22;"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="360" height="160" fill="#064e3b" stroke="#34d399"
+                                stroke-width="3" rx="8" />
+                            <polyline points="70,120 120,80 180,105 240,60 300,75 330,45" fill="none" stroke="#6ee7b7"
+                                stroke-width="4" />
+                            <circle cx="330" cy="45" r="5" fill="#34d399" />
+                            <text x="200" y="150" font-family="'Press Start 2P', monospace" font-size="12"
+                                fill="#ecfdf5" text-anchor="middle">DATA PIPELINE</text>
+                        </svg>
+                        <div class="project-preview-overlay">
+                            <span class="pixel-btn pixel-btn-primary" style="font-size: 0.65rem;">🔍 INSPECT</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-row">
+                            <span class="pixel-badge">DATA SCIENCE</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">2026</span>
+                        </div>
+                        <h3 class="project-item-title">Analytics Pipeline</h3>
+                        <p class="project-item-desc">
+                            Exploratory dataset modeling and statistical feature extraction implemented in Python with
+                            clean modular structure.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag-badge">Python</span>
+                            <span class="tag-badge">Pandas</span>
+                            <span class="tag-badge">Scikit-Learn</span>
+                        </div>
+                        <div class="project-card-actions">
+                            <span class="pixel-btn" style="font-size: 0.65rem; width: 100%;">View Details &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Project Detail Modal Popup -->
+        <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content-card">
+                <div class="modal-header">
+                    <span id="modal-title" class="modal-title">PROJECT SPECS</span>
+                    <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">✕ CLOSE</button>
+                </div>
+                <div class="modal-body">
+                    <span id="modal-badge" class="pixel-badge" style="align-self: flex-start;">FEATURED</span>
+                    <p id="modal-desc" style="color:var(--text-secondary); line-height: 1.6;"></p>
+
+                    <h4 style="font-family:var(--font-heading); font-size:1.1rem; color:var(--text-primary);">Key
+                        Highlights &amp; Innovations</h4>
+                    <ul id="modal-features"
+                        style="display:flex; flex-direction:column; gap:8px; color:var(--text-secondary); font-size:0.92rem;">
+                    </ul>
+
+                    <h4
+                        style="font-family:var(--font-heading); font-size:1.1rem; color:var(--text-primary); margin-top:8px;">
+                        Technologies Leveraged</h4>
+                    <div id="modal-stack" style="display:flex; flex-wrap:wrap; gap:8px;"></div>
+
+                    <div style="display:flex; gap:12px; margin-top:16px;">
+                        <a id="modal-github" href="#" target="_blank" rel="noopener noreferrer"
+                            class="pixel-btn pixel-btn-primary" style="font-size:0.7rem;">
+                            🐙 GitHub Repository
+                        </a>
+                        <a id="modal-demo" href="#" class="pixel-btn" style="font-size:0.7rem;">
+                            🌐 Live Overview
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- 8. EMBEDDED VIDEO SECTION (PROMPT 8)                               -->
+        <!-- Responsive aspect-ratio container, pixel art style & caption       -->
+        <!-- Plus interactive tab to view the local portfolio video asset       -->
+        <!-- ================================================================= -->
+        <section id="video-section" class="section-container" aria-labelledby="video-title">
+            <div class="section-header">
+                <span class="section-tag">[ 05. VIDEO SPOTLIGHT ]</span>
+                <h2 id="video-title" class="section-title">Video Introduction &amp; Project Demo</h2>
+                <p class="section-subtitle">Embedded walkthrough highlighting engineering projects and technical
+                    demonstrations</p>
+            </div>
+
+            <div class="video-showcase-box">
+                <div class="pixel-window-bar" style="margin: -28px -28px 20px -28px;">
+                    <div class="window-dots">
+                        <span class="window-dot dot-red"></span>
+                        <span class="window-dot dot-yellow"></span>
+                        <span class="window-dot dot-green"></span>
+                    </div>
+                    <span class="window-title">PLAYER // PORTFOLIO_MEDIA</span>
+                    <div class="video-switch-tabs">
+                        <button id="tab-video-yt" class="pixel-btn pixel-btn-primary"
+                            style="padding: 4px 8px; font-size: 0.6rem;">YouTube</button>
+                        <button id="tab-video-local" class="pixel-btn"
+                            style="padding: 4px 8px; font-size: 0.6rem;">Local Demo</button>
+                    </div>
+                </div>
+
+                <!-- 16:9 Responsive Video Container using CSS technique -->
+                <div class="video-responsive-container">
+                    <!-- YouTube Video Embed with sandbox and privacy-enhanced domain -->
+                    <iframe id="video-yt-frame" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0"
+                        title="Software Engineer Portfolio Showcase Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+
+                    <!-- Local Video Showcase option (`WhatsApp Video 2026-10-07 at 10.22.41 AM.mp4`) -->
+                    <video id="video-local-player" controls style="display:none;" preload="metadata"
+                        aria-label="Local portfolio video demonstration">
+                        <source src="WhatsApp Video 2026-10-07 at 10.22.41 AM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="video-caption-bar">
+                    <p class="video-caption-text">
+                        📹 <strong>Video Caption:</strong> A detailed walkthrough highlighting software architecture,
+                        IoT project demonstrations, and problem-solving methodology. Use the buttons above to toggle
+                        between the YouTube video stream and the local recorded demo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 9. TESTIMONIALS SECTION (PROMPT 9)                                -->
+        <!-- Card container with subtle drop shadow, rounded corners, quotes   -->
+        <!-- ================================================================= -->
+        <section id="testimonials" class="section-container" aria-labelledby="testimonials-title">
+            <div class="section-header">
+                <span class="section-tag">[ 06. FEEDBACK ]</span>
+                <h2 id="testimonials-title" class="section-title">Peer &amp; Mentor Testimonials</h2>
+                <p class="section-subtitle">What peers, project teammates, and mentors say about collaborating with me
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p class="testimonial-text">
+                        Shashikala showed outstanding determination during the LumiSense IoT system design. Her
+                        attention to sensor calibration and energy optimization made the project stand out in technical
+                        reviews.
+                    </p>
+                    <div class="testimonial-author-row">
+                        <div class="author-pixel-avatar">👨‍🏫</div>
+                        <div class="author-info">
+                            <span class="author-name">Project Mentor</span>
+                            <span class="author-role">Dept. of Computer Science &amp; Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p class="testimonial-text">
+                        A truly collaborative team member who writes clean, readable Python code and is always eager to
+                        debug complex edge cases. She approaches problems with a steady, structured mindset.
+                    </p>
+                    <div class="testimonial-author-row">
+                        <div class="author-pixel-avatar">👩‍💻</div>
+                        <div class="author-info">
+                            <span class="author-name">Engineering Peer</span>
+                            <span class="author-role">Adhichunchanagiri Institute of Technology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p class="testimonial-text">
+                        Her dedication to both hardware logic and modern web interfaces is impressive. Shashikala picks
+                        up new frameworks quickly and consistently delivers well-documented solutions.
+                    </p>
+                    <div class="testimonial-author-row">
+                        <div class="author-pixel-avatar">🚀</div>
+                        <div class="author-info">
+                            <span class="author-name">Lab Lead</span>
+                            <span class="author-role">Hardware &amp; IoT Innovation Lab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 10. AI CHAT INTERFACE INTEGRATION (PROMPT 10)                     -->
+        <!-- Interactive chat window simulating AI version of portfolio owner  -->
+        <!-- With comments for future LLM / OpenAI API integration             -->
+        <!-- ================================================================= -->
+        <section id="chat" class="section-container" aria-labelledby="chat-title">
+            <div class="section-header">
+                <span class="section-tag">[ 07. INTERACTIVE AI ]</span>
+                <h2 id="chat-title" class="section-title">Talk With My AI Companion</h2>
+                <p class="section-subtitle">Ask questions about my background, project details, skills, or education</p>
+            </div>
+
+            <div class="chat-terminal-container">
+                <div class="chat-header-bar">
+                    <div class="chat-bot-status">
+                        <span class="live-pulse" aria-hidden="true"></span>
+                        <span class="chat-bot-name">SHASHIKALA_BOT // V1.0-ACTIVE</span>
+                    </div>
+                    <span class="pixel-badge" style="font-size:0.55rem;">AI AGENT</span>
+                </div>
+
+                <!-- Chat Feed Messages Display Area -->
+                <div id="chat-feed" class="chat-feed-box" aria-live="polite">
+                    <div class="chat-bubble bot-message">
+                        👋 Hi! I'm an AI companion trained on Shashikala's background, technical skills, and IoT
+                        projects. What would you like to explore?
+                    </div>
+                </div>
+
+                <!-- Quick Prompt Chips for Convenience -->
+                <div class="chat-quick-queries">
+                    <span
+                        style="font-size: 0.72rem; color: var(--text-muted); font-family: var(--font-pixel);">QUICK:</span>
+                    <button type="button" class="quick-chip">What are your top skills?</button>
+                    <button type="button" class="quick-chip">Tell me about LumiSense</button>
+                    <button type="button" class="quick-chip">Where are you studying?</button>
+                    <button type="button" class="quick-chip">How can I contact you?</button>
+                </div>
+
+                <!-- Input area -->
+                <div class="chat-input-row">
+                    <input type="text" id="chat-input" class="chat-input-field"
+                        placeholder="Type a question (e.g. 'What programming languages do you know?')..."
+                        aria-label="Ask the AI avatar a question" />
+                    <button id="chat-send-btn" class="pixel-btn pixel-btn-primary" type="button"
+                        aria-label="Send message">
+                        SEND ↵
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 11. CONTACT FORM WITH EMAIL API FUNCTIONALITY (PROMPT 11)         -->
+        <!-- Fields for name, email, message, contrast submit btn & confirmation -->
+        <!-- Includes comments for Resend API service integration              -->
+        <!-- ================================================================= -->
+        <section id="contact" class="section-container" aria-labelledby="contact-title">
+            <div class="section-header">
+                <span class="section-tag">[ 08. COMMUNICATION ]</span>
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have an internship opportunity, project collaboration, or question? Send a
+                    message!</p>
+            </div>
+
+            <div class="contact-layout-box">
+                <!-- Contact Direct Channels Panel -->
+                <div class="contact-info-panel">
+                    <div>
+                        <span class="pixel-badge">DIRECT CHANNELS</span>
+                        <h3
+                            style="font-family:var(--font-heading); font-size:1.4rem; margin:14px 0 8px 0; color:var(--text-primary);">
+                            Let's Build Something Meaningful</h3>
+                        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.5;">
+                            I am actively looking for software engineering internships and collaborative research
+                            projects. My inbox is always open!
+                        </p>
+                    </div>
+
+                    <div class="contact-channels">
+                        <div class="channel-item">
+                            <span class="channel-icon" aria-hidden="true">📧</span>
+                            <div>
+                                <span class="channel-title">EMAIL ADDRESS</span>
+                                <div class="channel-value"><a href="mailto:ts3023456@gmail.com">ts3023456@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="channel-item">
+                            <span class="channel-icon" aria-hidden="true">📱</span>
+                            <div>
+                                <span class="channel-title">PHONE</span>
+                                <div class="channel-value">+91 9743725546</div>
+                            </div>
+                        </div>
+
+                        <div class="channel-item">
+                            <span class="channel-icon" aria-hidden="true">📍</span>
+                            <div>
+                                <span class="channel-title">LOCATION</span>
+                                <div class="channel-value">Karnataka, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel">
+                    <form id="portfolio-contact-form" class="contact-form" novalidate>
+                        <!-- Form status banner (Success / Error notification) -->
+                        <div id="form-status-alert" class="form-status-alert" role="alert"></div>
+
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">YOUR NAME *</label>
+                            <input type="text" id="contact-name" name="name" class="form-input"
+                                placeholder="e.g. Alex Johnson" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">EMAIL ADDRESS *</label>
+                            <input type="email" id="contact-email" name="email" class="form-input"
+                                placeholder="alex@company.com" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">MESSAGE *</label>
+                            <textarea id="contact-message" name="message" class="form-textarea"
+                                placeholder="Write your message, project idea, or opportunity here..."
+                                required></textarea>
+                        </div>
+
+                        <!-- High-contrast pixel submit button -->
+                        <button type="submit" id="contact-submit-btn" class="pixel-btn pixel-btn-primary"
+                            style="padding:14px; width:100%; font-size:0.85rem;">
+                            TRANSMIT MESSAGE 🚀
+                        </button>
+                    </form>
+                </div>
+            </div>
+        <!-- ===================================================================== -->
+        <!-- 12. SOCIAL MEDIA LINKS IN THE FOOTER (PROMPT 12)                      -->
+        <!-- Pixel art aesthetic, evenly spaced, hover effects, aria-labels        -->
+        <!-- ===================================================================== -->
+        <footer id="site-footer" class="site-footer">
+            <div class="footer-content">
+                <div class="footer-social-icons" aria-label="Social media profiles">
+                    <!-- GitHub Profile -->
+                    <a href="https://github.com/Shashikala-12" target="_blank" rel="noopener noreferrer"
+                        class="social-pixel-btn" aria-label="Visit Shashikala's GitHub Profile" title="GitHub">
+                        🐙
+                    </a>
+                    <!-- LinkedIn Profile -->
+                    <a href="https://linkedin.com/in/shashikala-t-58a073398" target="_blank" rel="noopener noreferrer"
+                        class="social-pixel-btn" aria-label="Visit Shashikala's LinkedIn Profile" title="LinkedIn">
+                        💼
+                    </a>
+                    <!-- Direct Email -->
+                    <a href="mailto:ts3023456@gmail.com" class="social-pixel-btn"
+                        aria-label="Send direct email to Shashikala" title="Email">
+                        ✉️
+                    </a>
+                    <!-- Resume Download / View -->
+                    <a href="Shashikala_T.pdf" target="_blank" rel="noopener noreferrer" class="social-pixel-btn"
+                        aria-label="View Resume PDF" title="Resume PDF">
+                        📄
+                    </a>
+                </div>
+
+                <p class="footer-copy">
+                    &copy; <span id="current-year">2026</span> Shashikala T. Designed &amp; Engineered with Pixel Art
+                    Aesthetics and Clean Web Standards.
+                </p>
+                <p class="footer-quote">
+                    &lt;CODE&gt; EAT. CODE. LEARN. REPEAT. &lt;/CODE&gt;
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ===================================================================== -->
+    <!-- CLIENT JAVASCRIPT BUNDLE                                              -->
+    <!-- ===================================================================== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
